@@ -1,0 +1,15 @@
+{
+  "name": "DoubanAppDownloadRemover",
+  "version": "0.1.0",
+  "description": "Remove douban app download entry in nav-bar",
+  "browser_action": {
+    "default_title": "Douban app download remover"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*.douban.com/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "manifest_version": 2
+}
